@@ -1,0 +1,24 @@
+
+import json
+
+def load_data(filepath):
+    with open(filepath, encoding='UTF-8') as file:
+        return json.load(file)
+
+
+def get_biggest_bar(data):
+    pass
+
+
+def get_smallest_bar(data):
+    pass
+
+
+def get_closest_bar(data, longitude, latitude):
+    pass
+
+s = '[{"test":true, "netest":false, "numder":0, "string":"Hello"},{"test":true, "netest":false, "numder":1, "string":"Hello"},{"test":true, "netest":false, "numder":2, "string":"Hello"}]'
+
+if __name__ == '__main__':
+  path_of_file = str(input("Entry path to file: "))
+  print (load_data(path_of_file))
